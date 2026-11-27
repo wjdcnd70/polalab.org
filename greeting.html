@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>사단법인 정책법령연구소</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="polalab" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="polalab" />
+    <meta property="og:description" content="polalab" />
+    <meta property="og:image" content="./images/favicon.png" />
+    <meta property="og:url" content="http://www.polalab.org/" />
+    <meta property="al:android:app_name" content="polalab">
+    <meta property="al:web:url" content="http://www.polalab.org/">
+    <link href="http://www.polalab.org/css/common.css" rel="stylesheet" type="text/css">
+    
+    <link rel="shortcut icon" type="image/png" href="http://www.polalab.org/images/favicon.png" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <!--[if lt IE 9]>
+	<script type="text/javascript" src="/path/to/respond.js"></script>
+	<![endif]-->
+</head>
+<script>
+    function fnSendForm() {
+        var form = document.sendForm;
+        if (form.tel.value == '') {
+            alert('연락처를 입력하여주세요');
+            return;
+        }
+        if (form.email.value == '') {
+            alert('이메일를 입력하여주세요');
+            return;
+        }
+        form.submit();
+    }
+</script><a id="MOVE_TOP_BTN" class="ico-top" href="#">TOP</a>
+<script>
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#MOVE_TOP_BTN').fadeIn();
+            } else {
+                $('#MOVE_TOP_BTN').fadeOut();
+            }
+        });
+        $("#MOVE_TOP_BTN").click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    });
+</script>
+
+
+<body id="nav">
+    <div class="nav-wrap">
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html#nav"><img src="http://www.polalab.org/images/logo.png" alt="메인으로"></a>
+            </div>
+            
+<!--            <div class="nation"><a href="#" class="checked">KOR</a><a href="#none">ENG</a></div>-->
+            
+<!--
+            <ul class="mainmenu">
+                <li><a class="checked" href="company.html">소개</a></li>
+                <li><a href="work_01.html">연구소 활동</a></li>
+                <li><a href="notice.html">연구소 소식</a></li>
+                <li><a href="report_01.html">정보공개</a></li>
+                <li><a href="donation.html">후원하기</a></li>
+            </ul>
+-->
+          
+          
+          <ul class="mainmenu">
+                <div class="dropdown">
+                    <li class="dropbtn" onclick="window.location.href='company.html'">연구소 소개</li>
+                    <div class="dropdown-content">
+                        <a href="company.html">소개 및 설립취지</a>
+                        <a href="greeting.html">이사장 인사말</a>
+                        <a href="member.html">함께하는 사람들</a>
+                        <a href="location.html">오시는 길</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <li class="dropbtn" onclick="window.location.href='work_01.html'">연구소 활동</li>
+                    <div class="dropdown-content">
+                        <a class="ico_right" href="work_01.html">입법 분야</a>
+                        <a class="ico_right" href="work_02.html">교육 분야</a>
+                        <a class="ico_right" href="work_03.html">연구 분야</a>
+                        <a class="ico_right" href="work_04.html">기타</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <li class="dropbtn" onclick="window.location.href='notice.html'">연구소 소식</li>
+                    <div class="dropdown-content">
+                        <a href="notice.html">공지사항</a>
+                        <a href="news.html">언론보도</a>
+                       <a href="library.html">옥샘서재</a>
+                    </div>
+                </div>
+
+
+<!--
+                <div class="dropdown">
+                    <li class="dropbtn" onclick="window.location.href='report_01.html'">정보공개</li>
+                    <div class="dropdown-content">
+                        <a href="report_01.html">재정보고</a>
+                        <a href="report_02.html">운영보고</a>
+                    </div>
+                </div>
+-->
+
+
+                <div class="dropdown">
+                    <li class="dropbtn" onclick="window.location.href='donation.html'">후원하기</li>
+                    <div class="dropdown-content">
+                        <a href="donation.html">후원하기</a>
+                    </div>
+                </div>
+
+
+
+
+            </ul>
+           
+           
+           
+           
+            
+            <div class="nav_all"><a href="javascript:" onclick="jQuery('.menu_all').fadeToggle(500);">전체메뉴보기</a></div>
+            
+            <div class="clear"></div>
+        </div>
+        
+        <!--전체메뉴보기-->
+        <div class="menu_all" onclick="jQuery('.menu_all').fadeOut(500);">
+            <ul>
+              <li>
+                <li class="etc_btns">
+                    <h1>소개</h1>
+                    <a href="company.html">소개 및 설립취지</a>
+                    <a href="greeting.html">이사장 인사말</a>
+                    <a href="member.html">함께하는 사람들</a>
+                    <a href="location.html">오시는 길</a>
+                </li>
+                <li>
+                    <h1>연구소 활동</h1>
+                    <a class="ico_right" href="work_01.html">입법 분야</a>
+                    <a class="ico_right" href="work_02.html">교육 분야</a>
+                    <a class="ico_right" href="work_03.html">연구 분야</a>
+                </li>
+                <li class="etc_btns">
+                    <h1>연구소 소식</h1>
+                    <a href="notice.html">공지사항</a>
+                    <a href="news.html">언론보도</a>
+                    <a href="library.html">옥샘서재</a>
+                </li>
+                <li class="etc_btns">
+                    <h1>후원하기</h1>
+                    <a href="donation.html">후원하기</a>
+                </li>
+                
+               
+            </ul>
+        </div>
+        <!--//전체메뉴보기 -->
+        
+    </div>
+    
+    <script>
+        //클래스의 a링크(메뉴)클릭시 스크롤바 자연스럽게 내려간다
+        $(".mainmenu a").on("click", function() {
+            var targetMenu = $(this).attr("href");
+            var pos = $(targetMenu).offset().top - 0;
+            $("body, html").animate({
+                scrollTop: pos
+            }, 1000);
+            return false;
+        });
+    </script>
+<div class="sub_nav">
+    <ul>
+        <li><a href="company.html">소개 및 설립취지</a></li>
+        <li><a href="greeting.html" class="checked">이사장 인사말</a></li>
+        <li><a href="member.html">함께하는 사람들</a></li>
+        <li><a href="location.html">오시는 길</a></li>
+    </ul>
+</div>
+
+
+<h1 class="sub_title">인사말</h1>
+
+
+
+
+<div id="company">
+    <div class="greeting" id="">
+        <div class="ceo">
+            <h3>이사장 발기문 </h3>
+            <p> 우리 나라와 사회는 이미 세상 사람들이 놀라는 성장을 이룩하였습니다. 세계의 몇 안 되는 나라와 사회가 되었습니다. 그러나 김구 선생이 원하고 원한 나라에는 아직 미치지 못합니다.<br>
+
+
+선생은 우리의 부력(富力)은 우리의 생활을 풍족히 할 만하고, 우리의 강력(强力)은 남의 침략을 막을 만하면 족하다, 오직 한없이 가지고 싶은 것은 높은 문화(文化)의 힘이다고 하였습니다. 또 우리는 남의 것을 빼앗거나 남의 덕을 입으려는 사람이 아니라, 가족에게, 이웃에게, 동포에게 주는 것으로 낙을 삼는 사람이라고 하였습니다.<br>
+
+
+이런 나라와 사회를 이루는 데 없어서는 안 되는 것이 좋은 정책입니다. 또 아무리 좋은 정책이라고 해도 법령이 촘촘하고 제대로 구성되어야 지속적으로 정책을 추진할 수 있습니다.<br><br>
+
+
+우리 연구소는 동북아 해양수도 부산에 자리하고, 우리의 미래를 개척하는 데 힘이 되고자 합니다.  우리 나라 구석구석이 훌륭한 나라, 살고 싶은 곳이 되는데 힘을 보태고자 합니다. 정책학, 행정학, 법학뿐만 아니라 사회학, 심리학, 경제학 등 여러 학제간 연구를 강화하고 구축하겠습니다. 당장의 이해관계와 추상적인 이념에 휘둘리지 않고, 실사구시의 정신으로 뚜벅뚜벅 차근차근 걸어나겠습니다.<br>
+
+
+김구 선생이 1947년에 밝히신 희망과 서원이 이루어지도록 하는 데 중단과 휴식이 있을 수 없습니다. 다가올 수 있는 부침과 난관에 휩쓸리거나 좌절하지 않고, 반석 같은 각오와 변함없는 정성을 다하고자 합니다.<br>
+            </p> <span>사단법인 정책법령연구소 이사장<em>강호정</em></span>
+        </div>
+    </div>
+    
+    
+</div>
+<!--하단 정보 시작-->
+<div class="footer">
+    <div class="footer_info">
+        <!--전체메뉴보기 -->
+        <div class="menu_bottom">
+            <ul>
+                <li class="etc_btns">
+                    <h1>연구소 소개</h1>
+                    <a href="company.html">소개 및 설립취지</a>
+                    <a class="ico_right" href="greeting.html">이사장 인사말</a>
+                    <a class="ico_right" href="member.html">함께하는 사람들</a>
+                    <a class="ico_right" href="location.html">오시는 길</a>
+                </li>
+                <li>
+                    <h1>연구소 활동</h1>
+                    <a class="ico_right" href="work_01.html">입법 분야</a>
+                    <a class="ico_right" href="work_02.html">교육 분야</a>
+                    <a class="ico_right" href="work_03.html">연구 분야</a>
+                    <a class="ico_right" href="work_04.html">기타</a>
+                </li>
+                <li class="etc_btns">
+                    <h1>연구소 소식</h1>
+                    <a class="ico_right" href="notice.html">공지사항</a>
+                    <a class="ico_right" href="news.html">언론보도</a>
+                    <!-- <a class="ico_right" href="letter.html">뉴스레터</a>-->
+                </li>
+<!--
+                <li class="etc_btns">
+                    <h1>정보공개</h1>
+                    <a href="report_01.html">재정보고</a>
+                    <a href="report_02.html">운영보고</a>
+                </li>
+-->
+                <li>
+                    <h1>기부하기</h1>
+                    <a class="ico_right" href="donation.html">기부하기</a>
+                </li>
+            </ul>      
+            <div class="sns2">
+              <a href="https://www.acrc.go.kr/" target="_blank"><img src="http://www.polalab.org/images/common/logo_acrc.png" alt="국민권익위원회"></a>
+            </div>
+<!--
+            <div class="sns">
+            
+              <a href="http://plus.kakao.com/home" target="_blank"><img src="http://www.polalab.org/images/common/ico_kakaotalk.png" alt="kakao"></a>
+                <a href="http://www.facebook.com/" target="_blank"><img src="http://www.polalab.org/images/common/ico_facebook.png" alt="facebook"></a>
+                <a href="http://instagram.com/"><img src="http://www.polalab.org/images/common/ico_inst.png" alt="인스타그램"></a>
+                <a href="http://youtube.com/" target="_blank"><img src="http://www.polalab.org/images/common/ico_youtube.png" alt="youtube"></a>
+            </div>
+-->
+        </div>
+        <div class="box">
+            <br>47547 부산광역시 연제구 거제대로 118번길 34, 1층(거제동)
+            <br>대표 : 강호정
+            <br>사업자등록번호 : 308-82-10242 
+            <br>TEL : 051-867-1180
+            <br>FAX : 051-867-1181
+            <br>EMAIL : polalab2019@gmail.com
+        </div>
+        <div class="copy"><a href="login.html">© 사단법인 정책법령연구소</a> ALL RIGHTS RESERVED.
+            <div class="copy_info"><a href="policy.html">개인정보처리방침</a></div>
+        </div>
+    </div>
+</div>
+<!--하단 정보 끝-->
+</body>
+<script>
+    $(function() {
+        var shrinkHeader = 10;
+        $(window).scroll(function() {
+            makeUtlityBar();
+        });
+
+
+        function makeUtlityBar() {
+            var scroll = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset;
+            if (scroll >= shrinkHeader) {
+                $('.nav-wrap').addClass('nav-scroll');
+            } else {
+                $('.nav-wrap').removeClass('nav-scroll');
+            }
+        }
+    });
+</script>
+
+
+</html>
